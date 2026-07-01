@@ -1,0 +1,13 @@
+# Ignore the entire data directory where heavy lidar files are stored
+data/
+
+# Ignore PyCharm configuration files
+.idea/
+
+# Ignore Python virtual environment
+.venv/
+venv/
+
+# Ignore compiled python files
+__pycache__/
+*.pyc
