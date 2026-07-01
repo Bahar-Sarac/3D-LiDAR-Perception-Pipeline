@@ -41,7 +41,7 @@ pcd_downsampled = pcd.voxel_down_sample(voxel_size=voxel_size)
 print(f"[INFO] Point count after Voxel Downsampling: {len(pcd_downsampled.points)}")
 
 # ==========================================
-# STEP 3.5: RANSAC GROUND PLANE SEGMENTATION
+# STEP 4: RANSAC GROUND PLANE SEGMENTATION
 # ==========================================
 # Segment the dominant road plane using mathematical iterative consensus
 # distance_threshold: Max distance (in meters) a point can be from the model plane
@@ -63,7 +63,7 @@ print(f"[PERCEPTION] Isolated Drivable Road Points: {len(road_pcd.points)}")
 print(f"[PERCEPTION] Isolated Spatial Obstacle Points: {len(obstacle_pcd.points)}")
 
 # ==========================================
-# STEP 4: VISUALIZATION
+# STEP 5: VISUALIZATION
 # ==========================================
 # Assign high-contrast semantic colors (Road: Red [RGB: 1,0,0] | Obstacles: White [RGB: 1,1,1])
 road_pcd.paint_uniform_color([1.0, 0.0, 0.0])
